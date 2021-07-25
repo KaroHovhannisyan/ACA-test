@@ -1,6 +1,31 @@
-# Getting Started with Create React App
+# Test task for ACA
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Available components.
+
+1. Button
+2. Checbkox
+3. Table
+
+For using `<Checkbox/>` you need to send `onChange` handler as required props.
+
+`<Table />`
+```javascript
+  <Table
+    headers: Array<{
+                    dataIndex: string,
+                    title: string,
+                    width: number,
+                    sorter: true | false
+             }>
+    data: Array<{}>
+    onScroll: Function
+    onItemClick: (item: Object) => void
+    onSort: ({ dataIndex: string; mode: 'asc' | 'desc'}) => void
+    defaultSort: {dataIndex: string; mode: 'asc' | 'desc'}
+    onRemoveItems: (ids: Array<string>) => void
+    loading: boolean   
+  />
+```
 
 ## Available Scripts
 
